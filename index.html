@@ -23,7 +23,7 @@
             <a href="#" class="nav_link">Contact</a>
           </li>
         </ul>
-        <button class="button">Log in</button>
+        <button class="button" id="form-open">Log in</button>
       </nav>
     </header>
 
@@ -34,7 +34,7 @@
         <!-- Login form -->
         <div class="form login_form">
           <form action="#">
-            <h2>Login</h2>
+            <h2>Log in</h2>
             <div class="input_box">
               <input type="email" placeholder="Enter your email" required />
               <i class="uil uil-envelope-alt email"></i>
@@ -58,11 +58,39 @@
             <button class="button">Login Now</button>
 
             <div class="login_signup">
-              Already have an account? <a href="#" id="signup">Signup</a>
+              Don't have an account? <a href="#" id="signup">Sign up</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sign up -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Sign up</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <button class="button">Sign up Now</button>
+
+            <div class="login_signup">
+              Already have an account? <a href="#" id="login">Log in</a>
             </div>
           </form>
         </div>
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
